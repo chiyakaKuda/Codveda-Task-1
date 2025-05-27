@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - WaMambo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo-1.png" alt="WaMambo Logo">
+            <span>WaMambo</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section class="blog-hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>OUR BLOG</h1>
+                <p>Insights, tutorials, and industry updates</p>
+            </div>
+        </section>
+
+        <section class="blog-grid">
+            <div class="blog-sidebar" data-aos="fade-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search posts...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="categories">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Web Development (5)</a></li>
+                        <li><a href="#">Design Trends (3)</a></li>
+                        <li><a href="#">Technology (4)</a></li>
+                        <li><a href="#">Business (2)</a></li>
+                    </ul>
+                </div>
+
+                <div class="recent-posts">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>
+                            <a href="#">The Future of Web Development</a>
+                            <span>May 25, 2025</span>
+                        </li>
+                        <li>
+                            <a href="#">Design Trends for 2025</a>
+                            <span>May 20, 2025</span>
+                        </li>
+                        <li>
+                            <a href="#">Mobile-First Development</a>
+                            <span>May 15, 2025</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="blog-posts">
+                <article class="blog-post" data-aos="fade-up">
+                    <div class="post-image">
+                        <img src="https://source.unsplash.com/800x400/?technology" alt="Blog Post 1">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> May 27, 2025</span>
+                            <span><i class="far fa-user"></i> John Doe</span>
+                            <span><i class="far fa-folder"></i> Web Development</span>
+                        </div>
+                        <h2>The Future of Web Development in 2025</h2>
+                        <p>Explore the latest trends and technologies shaping the future of web development. From AI integration to advanced frameworks...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-aos="fade-up">
+                    <div class="post-image">
+                        <img src="https://source.unsplash.com/800x400/?design" alt="Blog Post 2">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> May 25, 2025</span>
+                            <span><i class="far fa-user"></i> Jane Smith</span>
+                            <span><i class="far fa-folder"></i> Design Trends</span>
+                        </div>
+                        <h2>Essential UI/UX Design Principles</h2>
+                        <p>Learn the fundamental principles of creating user-friendly and aesthetically pleasing interfaces that engage and convert...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-aos="fade-up">
+                    <div class="post-image">
+                        <img src="https://source.unsplash.com/800x400/?mobile" alt="Blog Post 3">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> May 20, 2025</span>
+                            <span><i class="far fa-user"></i> Mike Johnson</span>
+                            <span><i class="far fa-folder"></i> Mobile Development</span>
+                        </div>
+                        <h2>Mobile-First Development Strategies</h2>
+                        <p>Discover effective strategies for implementing mobile-first development approaches in your projects...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <div class="pagination" data-aos="fade-up">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Creating amazing web experiences</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 WaMambo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

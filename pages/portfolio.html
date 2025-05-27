@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - WaMambo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo-1.png" alt="WaMambo Logo">
+            <span>WaMambo</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section class="portfolio-hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>OUR PORTFOLIO</h1>
+                <p>Showcasing our best work and creative solutions</p>
+            </div>
+        </section>
+
+        <section class="portfolio-grid">
+            <div class="portfolio-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="brand">Branding</button>
+            </div>
+
+            <div class="portfolio-items">
+                <div class="portfolio-item web" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/600x400/?website" alt="Web Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Modern Website</h3>
+                        <p>Web Design</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item app" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://source.unsplash.com/600x400/?mobile-app" alt="App Project">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App</h3>
+                        <p>App Development</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item brand" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://source.unsplash.com/600x400/?branding" alt="Brand Project">
+                    <div class="portfolio-overlay">
+                        <h3>Brand Identity</h3>
+                        <p>Branding</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item web" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/600x400/?web-application" alt="Web Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Web Application</h3>
+                        <p>Web Design</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item app" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://source.unsplash.com/600x400/?ios-app" alt="iOS App">
+                    <div class="portfolio-overlay">
+                        <h3>iOS Application</h3>
+                        <p>App Development</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item brand" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://source.unsplash.com/600x400/?logo-design" alt="Logo Design">
+                    <div class="portfolio-overlay">
+                        <h3>Logo Design</h3>
+                        <p>Branding</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Creating amazing web experiences</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 WaMambo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

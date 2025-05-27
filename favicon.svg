@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .logo-bg { fill: #000000; }
+        .logo-text { fill: #00e6b8; font-family: Arial, sans-serif; font-weight: bold; font-size: 20px; }
+    </style>
+    <circle class="logo-bg" cx="16" cy="16" r="16"/>
+    <text class="logo-text" x="16" y="23" text-anchor="middle">W</text>
+</svg>
