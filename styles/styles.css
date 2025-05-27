@@ -679,6 +679,47 @@ body {
     font-size: 0.9rem;
 }
 
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #64ffda;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.project-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #64ffda;
+    transition: width 0.3s ease;
+}
+
+.project-link:hover {
+    gap: 1.2rem;
+}
+
+.project-link:hover::after {
+    width: 100%;
+}
+
+.project-link i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover i {
+    transform: translateX(5px);
+}
+
 /* CTA Section */
 .cta-section {
     padding: 8rem 2rem;
