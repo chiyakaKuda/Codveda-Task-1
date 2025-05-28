@@ -306,10 +306,49 @@ body {
     }
 }
 
+/* Hero Section Mobile Optimization */
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 120px;
+        min-height: 100vh;
+    }
+
+    .hero-grid {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .hero-label {
+        font-size: 1rem;
+    }
+
+    .hero-showcase {
+        margin-top: 3rem;
+    }
+}
+
+/* Additional fine-tuning for smaller screens */
+@media (max-width: 480px) {
     .hero {
         padding-top: 100px;
     }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
 
     .navbar {
         padding: 1rem;
@@ -347,7 +386,7 @@ body {
     .showcase-item {
         padding: 2rem;
     }
-}
+
 
 @media (max-width: 480px) {
     .hero h1 {
