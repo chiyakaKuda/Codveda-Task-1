@@ -1,19 +1,107 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
+    // Mobile menu toggle with improved functionality
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
+    const body = document.body;
 
-    menuToggle.addEventListener('click', () => {
+    // Function to handle menu state
+    function toggleMenu() {
+        const isOpen = navLinks.classList.contains('active');
+        
+        // Toggle classes
         navLinks.classList.toggle('active');
         menuToggle.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        body.style.overflow = isOpen ? '' : 'hidden';
+        
+        // Add/remove event listener for escape key
+        if (!isOpen) {
+            document.addEventListener('keydown', handleEscapeKey);
+        } else {
+            document.removeEventListener('keydown', handleEscapeKey);
+        }
+    }
+
+    // Handle escape key press
+    function handleEscapeKey(e) {
+        if (e.key === 'Escape') {
+            toggleMenu();
+        }
+    }
+
+    // Handle click outside menu
+    function handleClickOutside(e) {
+        if (navLinks.classList.contains('active') && 
+            !navLinks.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            toggleMenu();
+        }
+    }
+
+    // Event listeners
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMenu();
     });
+
+    document.addEventListener('click', handleClickOutside);
 
     // Close menu when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            menuToggle.classList.remove('active');
+            if (navLinks.classList.contains('active')) {
+                toggleMenu();
+            }
         });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Add scroll-based navbar background
+    const navbar = document.querySelector('.navbar');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        // Add/remove background based on scroll position
+        if (currentScroll > 50) {
+            navbar.style.background = 'rgba(13, 15, 16, 0.95)';
+            navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        } else {
+            navbar.style.background = 'transparent';
+            navbar.style.boxShadow = 'none';
+        }
+
+        // Hide/show navbar based on scroll direction
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            navbar.style.transform = 'translateY(-100%)';
+        } else {
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        lastScroll = currentScroll;
+    });
+
+    // Initialize AOS with custom settings
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: 'ease-out-cubic'
     });
 
     // Hero slider functionality
