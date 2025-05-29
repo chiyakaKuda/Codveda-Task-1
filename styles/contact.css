@@ -234,6 +234,7 @@
     color: var(--text-primary);
     font-size: 1.2rem;
     transition: all var(--transition-speed) ease;
+    text-decoration: none;
 }
 
 .social-link:hover {
@@ -241,6 +242,7 @@
     color: var(--bg-dark);
     transform: translateY(-3px);
     border-color: var(--primary-color);
+    text-decoration: none;
 }
 
 /* Map Section */
