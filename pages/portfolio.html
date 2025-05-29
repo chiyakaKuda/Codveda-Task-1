@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - WaMambo</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">
-            <img src="logo-1.png" alt="WaMambo Logo">
-            <span>WaMambo</span>
-        </div>
+        <div class="logo">WaMambo</div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html" class="active">Portfolio</a></li>
             <li><a href="services.html">Services</a></li>
@@ -29,101 +27,171 @@
     </nav>
 
     <main>
-        <section class="portfolio-hero">
+        <section class="hero portfolio-hero">
             <div class="hero-content" data-aos="fade-up">
-                <h1>OUR PORTFOLIO</h1>
-                <p>Showcasing our best work and creative solutions</p>
+                <div class="hero-main">
+                    <div class="hero-header">
+                        <span class="hero-label">// Our Work</span>
+                        <h1>Featured Projects</h1>
+                        <p class="hero-subtitle">Showcasing our best work and innovative solutions</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="portfolio-grid">
+        <section class="portfolio-section">
             <div class="portfolio-filters" data-aos="fade-up">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
-                <button class="filter-btn" data-filter="app">App Development</button>
-                <button class="filter-btn" data-filter="brand">Branding</button>
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="ai">AI Solutions</button>
             </div>
 
-            <div class="portfolio-items">
-                <div class="portfolio-item web" data-aos="fade-up">
-                    <img src="https://source.unsplash.com/600x400/?website" alt="Web Project 1">
-                    <div class="portfolio-overlay">
-                        <h3>Modern Website</h3>
-                        <p>Web Design</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+            <div class="portfolio-grid">
+                <!-- Web Development Projects -->
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/800x600/?ecommerce" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Platform</h3>
+                            <p>Modern e-commerce solution with advanced features</p>
+                            <div class="portfolio-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item app" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://source.unsplash.com/600x400/?mobile-app" alt="App Project">
-                    <div class="portfolio-overlay">
-                        <h3>Mobile App</h3>
-                        <p>App Development</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/800x600/?dashboard" alt="Analytics Dashboard">
+                        <div class="portfolio-overlay">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Real-time data visualization platform</p>
+                            <div class="portfolio-tech">
+                                <span>Vue.js</span>
+                                <span>D3.js</span>
+                                <span>Firebase</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item brand" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://source.unsplash.com/600x400/?branding" alt="Brand Project">
-                    <div class="portfolio-overlay">
-                        <h3>Brand Identity</h3>
-                        <p>Branding</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <!-- Mobile App Projects -->
+                <div class="portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/800x600/?mobile-app" alt="Fitness App">
+                        <div class="portfolio-overlay">
+                            <h3>Fitness Tracker</h3>
+                            <p>Cross-platform fitness tracking application</p>
+                            <div class="portfolio-tech">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>REST API</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item web" data-aos="fade-up">
-                    <img src="https://source.unsplash.com/600x400/?web-application" alt="Web Project 2">
-                    <div class="portfolio-overlay">
-                        <h3>Web Application</h3>
-                        <p>Web Design</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <!-- UI/UX Design Projects -->
+                <div class="portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/800x600/?design" alt="Banking App Design">
+                        <div class="portfolio-overlay">
+                            <h3>Banking App Design</h3>
+                            <p>Modern banking interface design system</p>
+                            <div class="portfolio-tech">
+                                <span>Figma</span>
+                                <span>UI/UX</span>
+                                <span>Design System</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item app" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://source.unsplash.com/600x400/?ios-app" alt="iOS App">
-                    <div class="portfolio-overlay">
-                        <h3>iOS Application</h3>
-                        <p>App Development</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <!-- AI Solutions Projects -->
+                <div class="portfolio-item" data-category="ai" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/800x600/?artificial-intelligence" alt="AI Chatbot">
+                        <div class="portfolio-overlay">
+                            <h3>AI Customer Service</h3>
+                            <p>Intelligent chatbot for customer support</p>
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>NLP</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item brand" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://source.unsplash.com/600x400/?logo-design" alt="Logo Design">
-                    <div class="portfolio-overlay">
-                        <h3>Logo Design</h3>
-                        <p>Branding</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <div class="portfolio-item" data-category="ai" data-aos="fade-up" data-aos-delay="600">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/800x600/?machine-learning" alt="ML Platform">
+                        <div class="portfolio-overlay">
+                            <h3>ML Prediction Platform</h3>
+                            <p>Machine learning platform for business analytics</p>
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>AWS</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" data-aos="fade-up">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's create something amazing together</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button primary">Get in Touch</a>
+                    <a href="services.html" class="cta-button secondary">Our Services</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>Creating amazing web experiences</p>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <div class="footer-logo">WaMambo</div>
+                <p>Crafting digital excellence with innovative solutions</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-            <div class="footer-section">
+            <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: info@example.com</p>
-                <p>Phone: (123) 456-7890</p>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> hello@wamambo.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> New York, NY 10012</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 WaMambo. All rights reserved.</p>
+            <p>&copy; 2024 WaMambo. All rights reserved.</p>
         </div>
     </footer>
 
@@ -133,7 +201,46 @@
             duration: 1000,
             once: true
         });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Portfolio filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
     </script>
-    <script src="script.js"></script>
 </body>
 </html>
