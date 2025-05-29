@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/blog.css">
 </head>
 <body>
     <nav class="navbar">
@@ -54,22 +55,26 @@
         </section>
 
         <!-- Featured Post Section -->
-        <section class="featured-post" data-aos="fade-up">
-            <div class="featured-content">
+        <section class="featured-post">
+            <div class="featured-container">
                 <div class="featured-image">
-                    <img src="https://source.unsplash.com/1200x800/?technology" alt="Featured Post">
-                    <div class="featured-overlay">
-                        <span class="featured-tag">Featured</span>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Digital Innovation in Zimbabwe">
                 </div>
-                <div class="featured-details">
+                <div class="featured-content">
                     <div class="post-meta">
-                        <span><i class="far fa-calendar"></i> May 27, 2024</span>
-                        <span><i class="far fa-user"></i> John Doe</span>
-                        <span><i class="far fa-folder"></i> Technology</span>
+                        <span class="post-category">Technology</span>
+                        <span class="post-date">March 15, 2024</span>
+                        <span class="post-read-time">8 min read</span>
                     </div>
-                    <h2>The Future of Web Development: Trends to Watch in 2024</h2>
-                    <p>Explore the cutting-edge technologies and methodologies that are shaping the future of web development. From AI integration to advanced frameworks, discover what's next in the digital landscape.</p>
+                    <h2>The Rise of Tech Innovation in Zimbabwe: A Digital Revolution</h2>
+                    <p class="post-excerpt">Exploring how Zimbabwe's tech ecosystem is evolving, from Harare's startup scene to rural digital transformation initiatives. Discover the challenges and opportunities in Zimbabwe's journey towards digital excellence.</p>
+                    <div class="post-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Tafadzwa Moyo">
+                        <div class="author-info">
+                            <h4>Tafadzwa Moyo</h4>
+                            <p>Tech Innovation Lead, Harare</p>
+                        </div>
+                    </div>
                     <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -77,166 +82,147 @@
 
         <!-- Blog Grid Section -->
         <section class="blog-grid">
-            <div class="blog-sidebar" data-aos="fade-right">
-                <div class="sidebar-widget categories">
-                    <h3>Categories</h3>
-                    <ul>
-                        <li>
-                            <a href="#" class="category-link">
-                                <span>Web Development</span>
-                                <span class="category-count">12</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="category-link">
-                                <span>Design Trends</span>
-                                <span class="category-count">8</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="category-link">
-                                <span>Technology</span>
-                                <span class="category-count">15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="category-link">
-                                <span>Business</span>
-                                <span class="category-count">6</span>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="blog-container">
+                <div class="blog-main">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mobile Money in Zimbabwe">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Fintech</span>
+                                <span class="post-date">March 10, 2024</span>
+                                <span class="post-read-time">6 min read</span>
+                            </div>
+                            <h3>The Evolution of Mobile Money in Zimbabwe: From EcoCash to Innovation</h3>
+                            <p>How mobile money platforms are transforming Zimbabwe's financial landscape and driving financial inclusion across the country.</p>
+                            <div class="post-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Rumbidzai Chikwava">
+                                <div class="author-info">
+                                    <h4>Rumbidzai Chikwava</h4>
+                                    <p>Fintech Analyst, Bulawayo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Tech Education in Zimbabwe">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Education</span>
+                                <span class="post-date">March 5, 2024</span>
+                                <span class="post-read-time">7 min read</span>
+                            </div>
+                            <h3>Bridging the Digital Divide: Tech Education in Zimbabwe's Rural Areas</h3>
+                            <p>Examining initiatives that are bringing technology education to Zimbabwe's rural communities and empowering the next generation of tech innovators.</p>
+                            <div class="post-author">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Farai Mutsvairo">
+                                <div class="author-info">
+                                    <h4>Farai Mutsvairo</h4>
+                                    <p>Education Technology Specialist, Mutare</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="E-commerce in Zimbabwe">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">E-commerce</span>
+                                <span class="post-date">February 28, 2024</span>
+                                <span class="post-read-time">5 min read</span>
+                            </div>
+                            <h3>E-commerce Boom: How Online Shopping is Transforming Zimbabwe's Retail Landscape</h3>
+                            <p>Exploring the growth of e-commerce platforms in Zimbabwe and their impact on traditional retail businesses and consumer behavior.</p>
+                            <div class="post-author">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Tinashe Mupfumira">
+                                <div class="author-info">
+                                    <h4>Tinashe Mupfumira</h4>
+                                    <p>Digital Commerce Expert, Harare</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
 
-                <div class="sidebar-widget recent-posts">
-                    <h3>Recent Posts</h3>
-                    <div class="recent-post-item">
-                        <img src="https://source.unsplash.com/400x300/?coding" alt="Recent Post">
-                        <div class="recent-post-content">
-                            <h4>Modern CSS Techniques</h4>
-                            <span>May 25, 2024</span>
-                        </div>
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Technology <span>(12)</span></a></li>
+                            <li><a href="#">Fintech <span>(8)</span></a></li>
+                            <li><a href="#">Digital Innovation <span>(15)</span></a></li>
+                            <li><a href="#">Education <span>(6)</span></a></li>
+                            <li><a href="#">E-commerce <span>(9)</span></a></li>
+                            <li><a href="#">Startups <span>(7)</span></a></li>
+                        </ul>
                     </div>
-                    <div class="recent-post-item">
-                        <img src="https://source.unsplash.com/400x300/?design" alt="Recent Post">
-                        <div class="recent-post-content">
-                            <h4>UI/UX Design Principles</h4>
-                            <span>May 22, 2024</span>
-                        </div>
-                    </div>
-                    <div class="recent-post-item">
-                        <img src="https://source.unsplash.com/400x300/?mobile" alt="Recent Post">
-                        <div class="recent-post-content">
-                            <h4>Mobile-First Development</h4>
-                            <span>May 20, 2024</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="sidebar-widget tags">
-                    <h3>Popular Tags</h3>
-                    <div class="tag-cloud">
-                        <a href="#" class="tag">Web Dev</a>
-                        <a href="#" class="tag">Design</a>
-                        <a href="#" class="tag">UI/UX</a>
-                        <a href="#" class="tag">JavaScript</a>
-                        <a href="#" class="tag">React</a>
-                        <a href="#" class="tag">CSS</a>
-                        <a href="#" class="tag">Mobile</a>
-                        <a href="#" class="tag">AI</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="blog-posts">
-                <article class="blog-post" data-aos="fade-up">
-                    <div class="post-image">
-                        <img src="https://source.unsplash.com/800x400/?artificial-intelligence" alt="AI in Web Development">
-                        <div class="post-category">Technology</div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> May 25, 2024</span>
-                            <span><i class="far fa-user"></i> Jane Smith</span>
-                            <span><i class="far fa-clock"></i> 8 min read</span>
-                        </div>
-                        <h2>AI Integration in Modern Web Development</h2>
-                        <p>Discover how artificial intelligence is revolutionizing web development, from automated testing to intelligent user interfaces and personalized experiences.</p>
-                        <div class="post-footer">
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                            <div class="post-tags">
-                                <span class="tag">AI</span>
-                                <span class="tag">Web Dev</span>
+                    <!-- Recent Posts Widget -->
+                    <div class="sidebar-widget">
+                        <h3>Recent Posts</h3>
+                        <div class="recent-posts">
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Recent Post">
+                                <div class="recent-post-content">
+                                    <h4>Mobile Money Revolution in Zimbabwe</h4>
+                                    <span class="post-date">March 10, 2024</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Recent Post">
+                                <div class="recent-post-content">
+                                    <h4>Tech Education in Rural Zimbabwe</h4>
+                                    <span class="post-date">March 5, 2024</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Recent Post">
+                                <div class="recent-post-content">
+                                    <h4>E-commerce Growth in Zimbabwe</h4>
+                                    <span class="post-date">February 28, 2024</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </article>
 
-                <article class="blog-post" data-aos="fade-up" data-aos-delay="100">
-                    <div class="post-image">
-                        <img src="https://source.unsplash.com/800x400/?design" alt="UI Design Trends">
-                        <div class="post-category">Design</div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> May 22, 2024</span>
-                            <span><i class="far fa-user"></i> Mike Johnson</span>
-                            <span><i class="far fa-clock"></i> 6 min read</span>
-                        </div>
-                        <h2>2024 UI Design Trends: What's Next?</h2>
-                        <p>Explore the latest UI design trends that are shaping the digital landscape, from micro-interactions to dark mode and beyond.</p>
-                        <div class="post-footer">
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                            <div class="post-tags">
-                                <span class="tag">Design</span>
-                                <span class="tag">UI/UX</span>
-                            </div>
+                    <!-- Popular Tags Widget -->
+                    <div class="sidebar-widget">
+                        <h3>Popular Tags</h3>
+                        <div class="tag-cloud">
+                            <a href="#">#ZimTech</a>
+                            <a href="#">#DigitalZim</a>
+                            <a href="#">#HarareTech</a>
+                            <a href="#">#ZimInnovation</a>
+                            <a href="#">#TechEducation</a>
+                            <a href="#">#ZimStartups</a>
+                            <a href="#">#FintechZim</a>
+                            <a href="#">#DigitalTransformation</a>
                         </div>
                     </div>
-                </article>
-
-                <article class="blog-post" data-aos="fade-up" data-aos-delay="200">
-                    <div class="post-image">
-                        <img src="https://source.unsplash.com/800x400/?mobile-app" alt="Mobile Development">
-                        <div class="post-category">Development</div>
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> May 20, 2024</span>
-                            <span><i class="far fa-user"></i> Sarah Wilson</span>
-                            <span><i class="far fa-clock"></i> 10 min read</span>
-                        </div>
-                        <h2>Mobile-First Development: Best Practices</h2>
-                        <p>Learn the essential strategies and best practices for implementing mobile-first development approaches in your projects.</p>
-                        <div class="post-footer">
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                            <div class="post-tags">
-                                <span class="tag">Mobile</span>
-                                <span class="tag">Development</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <div class="pagination" data-aos="fade-up">
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#" class="next">
-                        Next <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
+                </aside>
             </div>
         </section>
 
         <!-- Newsletter Section -->
-        <section class="newsletter-section" data-aos="fade-up">
-            <div class="newsletter-content">
-                <h2>Subscribe to Our Newsletter</h2>
-                <p>Get the latest articles and insights delivered straight to your inbox</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="subscribe-btn">Subscribe</button>
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <h2>Stay Updated with Zimbabwe's Tech Scene</h2>
+                <p>Subscribe to our newsletter for the latest insights on technology, innovation, and digital transformation in Zimbabwe.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
         </section>
