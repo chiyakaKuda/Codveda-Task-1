@@ -3,96 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Modern Website</title>
+    <title>Contact Us - WaMambo</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <!-- Leaflet CSS for Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">MyWebsite</div>
+        <div class="logo">WaMambo</div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 
     <main>
+        <!-- Contact Hero Section -->
         <section class="contact-hero">
-            <div class="contact-content" data-aos="fade-up">
-                <h1>Contact Us</h1>
-                <p>Get in touch with our team</p>
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-main">
+                    <div class="hero-header">
+                        <span class="hero-label">// Get in Touch</span>
+                        <h1>Let's Build Something Amazing Together</h1>
+                        <p class="hero-subtitle">We're here to help bring your ideas to life</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-background">
+                <div class="animated-shape"></div>
+                <div class="animated-shape"></div>
+                <div class="animated-shape"></div>
             </div>
         </section>
 
-        <section class="contact-section">
-            <div class="contact-info" data-aos="fade-right">
-                <h2>Contact Information</h2>
-                <div class="info-item">
-                    <h3>Address</h3>
-                    <p>123 Web Street, Digital City, 12345</p>
+        <!-- Contact Information Section -->
+        <section class="contact-info-section">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container" data-aos="fade-right">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
-                <div class="info-item">
-                    <h3>Email</h3>
-                    <p>info@example.com</p>
-                </div>
-                <div class="info-item">
-                    <h3>Phone</h3>
-                    <p>(123) 456-7890</p>
+
+                <!-- Contact Details -->
+                <div class="contact-details" data-aos="fade-left">
+                    <div class="contact-card">
+                        <h2>Contact Information</h2>
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Our Location</h3>
+                                    <p>123 Innovation Street<br>New York, NY 10012<br>United States</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <h3>Phone Number</h3>
+                                    <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email Address</h3>
+                                    <p>hello@wamambo.com<br>support@wamambo.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Working Hours</h3>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="contact-form" data-aos="fade-left">
-                <h2>Send us a Message</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+        <!-- Map Section -->
+        <section class="map-section" data-aos="fade-up">
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="contact-faq">
+            <div class="faq-container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>What services do you offer?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a wide range of services including web development, mobile app development, UI/UX design, and AI solutions. Visit our services page for more details.</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question">
+                            <h3>How long does a typical project take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Project timelines vary depending on complexity and scope. A typical website might take 4-8 weeks, while more complex applications can take 3-6 months.</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question">
+                            <h3>Do you offer maintenance services?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer comprehensive maintenance and support services to ensure your digital solutions remain up-to-date and secure.</p>
+                        </div>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="contact-cta" data-aos="fade-up">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss how we can help bring your vision to life</p>
+                <div class="cta-buttons">
+                    <a href="tel:+15551234567" class="cta-button primary">
+                        <i class="fas fa-phone"></i> Call Us Now
+                    </a>
+                    <a href="mailto:hello@wamambo.com" class="cta-button secondary">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>Creating amazing web experiences</p>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <div class="footer-logo">WaMambo</div>
+                <p>Crafting digital excellence with innovative solutions</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-            <div class="footer-section">
+            <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: info@example.com</p>
-                <p>Phone: (123) 456-7890</p>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> hello@wamambo.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> New York, NY 10012</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+            <p>&copy; 2024 WaMambo. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
+        // Initialize AOS
         AOS.init({
             duration: 1000,
             once: true
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Initialize Map
+        const map = L.map('map').setView([40.7128, -74.0060], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add marker
+        L.marker([40.7128, -74.0060]).addTo(map)
+            .bindPopup('WaMambo Headquarters<br>123 Innovation Street, NY')
+            .openPopup();
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+                
+                const answer = question.nextElementSibling;
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    answer.style.maxHeight = '0';
+                }
+            });
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Here you would typically handle the form submission
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
         });
     </script>
 </body>
