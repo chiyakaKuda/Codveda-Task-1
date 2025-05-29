@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - WaMambo</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">
-            <img src="logo-1.png" alt="WaMambo Logo">
-            <span>WaMambo</span>
-        </div>
+        <div class="logo">WaMambo</div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="services.html">Services</a></li>
@@ -29,95 +27,194 @@
     </nav>
 
     <main>
+        <!-- Hero Section -->
         <section class="blog-hero">
             <div class="hero-content" data-aos="fade-up">
-                <h1>OUR BLOG</h1>
-                <p>Insights, tutorials, and industry updates</p>
+                <div class="hero-main">
+                    <div class="hero-header">
+                        <span class="hero-label">// Our Blog</span>
+                        <h1>Insights & Innovation</h1>
+                        <p class="hero-subtitle">Exploring the latest in technology, design, and digital trends</p>
+                    </div>
+                    <div class="search-container" data-aos="fade-up" data-aos-delay="200">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search articles..." class="search-input">
+                            <button type="submit" class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-background">
+                <div class="animated-shape"></div>
+                <div class="animated-shape"></div>
+                <div class="animated-shape"></div>
             </div>
         </section>
 
+        <!-- Featured Post Section -->
+        <section class="featured-post" data-aos="fade-up">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="https://source.unsplash.com/1200x800/?technology" alt="Featured Post">
+                    <div class="featured-overlay">
+                        <span class="featured-tag">Featured</span>
+                    </div>
+                </div>
+                <div class="featured-details">
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> May 27, 2024</span>
+                        <span><i class="far fa-user"></i> John Doe</span>
+                        <span><i class="far fa-folder"></i> Technology</span>
+                    </div>
+                    <h2>The Future of Web Development: Trends to Watch in 2024</h2>
+                    <p>Explore the cutting-edge technologies and methodologies that are shaping the future of web development. From AI integration to advanced frameworks, discover what's next in the digital landscape.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Grid Section -->
         <section class="blog-grid">
             <div class="blog-sidebar" data-aos="fade-right">
-                <div class="search-box">
-                    <input type="text" placeholder="Search posts...">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-                
-                <div class="categories">
+                <div class="sidebar-widget categories">
                     <h3>Categories</h3>
                     <ul>
-                        <li><a href="#">Web Development (5)</a></li>
-                        <li><a href="#">Design Trends (3)</a></li>
-                        <li><a href="#">Technology (4)</a></li>
-                        <li><a href="#">Business (2)</a></li>
+                        <li>
+                            <a href="#" class="category-link">
+                                <span>Web Development</span>
+                                <span class="category-count">12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="category-link">
+                                <span>Design Trends</span>
+                                <span class="category-count">8</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="category-link">
+                                <span>Technology</span>
+                                <span class="category-count">15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="category-link">
+                                <span>Business</span>
+                                <span class="category-count">6</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="recent-posts">
+                <div class="sidebar-widget recent-posts">
                     <h3>Recent Posts</h3>
-                    <ul>
-                        <li>
-                            <a href="#">The Future of Web Development</a>
-                            <span>May 25, 2025</span>
-                        </li>
-                        <li>
-                            <a href="#">Design Trends for 2025</a>
-                            <span>May 20, 2025</span>
-                        </li>
-                        <li>
-                            <a href="#">Mobile-First Development</a>
-                            <span>May 15, 2025</span>
-                        </li>
-                    </ul>
+                    <div class="recent-post-item">
+                        <img src="https://source.unsplash.com/400x300/?coding" alt="Recent Post">
+                        <div class="recent-post-content">
+                            <h4>Modern CSS Techniques</h4>
+                            <span>May 25, 2024</span>
+                        </div>
+                    </div>
+                    <div class="recent-post-item">
+                        <img src="https://source.unsplash.com/400x300/?design" alt="Recent Post">
+                        <div class="recent-post-content">
+                            <h4>UI/UX Design Principles</h4>
+                            <span>May 22, 2024</span>
+                        </div>
+                    </div>
+                    <div class="recent-post-item">
+                        <img src="https://source.unsplash.com/400x300/?mobile" alt="Recent Post">
+                        <div class="recent-post-content">
+                            <h4>Mobile-First Development</h4>
+                            <span>May 20, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget tags">
+                    <h3>Popular Tags</h3>
+                    <div class="tag-cloud">
+                        <a href="#" class="tag">Web Dev</a>
+                        <a href="#" class="tag">Design</a>
+                        <a href="#" class="tag">UI/UX</a>
+                        <a href="#" class="tag">JavaScript</a>
+                        <a href="#" class="tag">React</a>
+                        <a href="#" class="tag">CSS</a>
+                        <a href="#" class="tag">Mobile</a>
+                        <a href="#" class="tag">AI</a>
+                    </div>
                 </div>
             </div>
 
             <div class="blog-posts">
                 <article class="blog-post" data-aos="fade-up">
                     <div class="post-image">
-                        <img src="https://source.unsplash.com/800x400/?technology" alt="Blog Post 1">
+                        <img src="https://source.unsplash.com/800x400/?artificial-intelligence" alt="AI in Web Development">
+                        <div class="post-category">Technology</div>
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> May 27, 2025</span>
-                            <span><i class="far fa-user"></i> John Doe</span>
-                            <span><i class="far fa-folder"></i> Web Development</span>
-                        </div>
-                        <h2>The Future of Web Development in 2025</h2>
-                        <p>Explore the latest trends and technologies shaping the future of web development. From AI integration to advanced frameworks...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="blog-post" data-aos="fade-up">
-                    <div class="post-image">
-                        <img src="https://source.unsplash.com/800x400/?design" alt="Blog Post 2">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> May 25, 2025</span>
+                            <span><i class="far fa-calendar"></i> May 25, 2024</span>
                             <span><i class="far fa-user"></i> Jane Smith</span>
-                            <span><i class="far fa-folder"></i> Design Trends</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
                         </div>
-                        <h2>Essential UI/UX Design Principles</h2>
-                        <p>Learn the fundamental principles of creating user-friendly and aesthetically pleasing interfaces that engage and convert...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <h2>AI Integration in Modern Web Development</h2>
+                        <p>Discover how artificial intelligence is revolutionizing web development, from automated testing to intelligent user interfaces and personalized experiences.</p>
+                        <div class="post-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="post-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Web Dev</span>
+                            </div>
+                        </div>
                     </div>
                 </article>
 
-                <article class="blog-post" data-aos="fade-up">
+                <article class="blog-post" data-aos="fade-up" data-aos-delay="100">
                     <div class="post-image">
-                        <img src="https://source.unsplash.com/800x400/?mobile" alt="Blog Post 3">
+                        <img src="https://source.unsplash.com/800x400/?design" alt="UI Design Trends">
+                        <div class="post-category">Design</div>
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> May 20, 2025</span>
+                            <span><i class="far fa-calendar"></i> May 22, 2024</span>
                             <span><i class="far fa-user"></i> Mike Johnson</span>
-                            <span><i class="far fa-folder"></i> Mobile Development</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
                         </div>
-                        <h2>Mobile-First Development Strategies</h2>
-                        <p>Discover effective strategies for implementing mobile-first development approaches in your projects...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        <h2>2024 UI Design Trends: What's Next?</h2>
+                        <p>Explore the latest UI design trends that are shaping the digital landscape, from micro-interactions to dark mode and beyond.</p>
+                        <div class="post-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="post-tags">
+                                <span class="tag">Design</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-aos="fade-up" data-aos-delay="200">
+                    <div class="post-image">
+                        <img src="https://source.unsplash.com/800x400/?mobile-app" alt="Mobile Development">
+                        <div class="post-category">Development</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> May 20, 2024</span>
+                            <span><i class="far fa-user"></i> Sarah Wilson</span>
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h2>Mobile-First Development: Best Practices</h2>
+                        <p>Learn the essential strategies and best practices for implementing mobile-first development approaches in your projects.</p>
+                        <div class="post-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="post-tags">
+                                <span class="tag">Mobile</span>
+                                <span class="tag">Development</span>
+                            </div>
+                        </div>
                     </div>
                 </article>
 
@@ -125,34 +222,55 @@
                     <a href="#" class="active">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
-                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="next">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section" data-aos="fade-up">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest articles and insights delivered straight to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>Creating amazing web experiences</p>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <div class="footer-logo">WaMambo</div>
+                <p>Crafting digital excellence with innovative solutions</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-            <div class="footer-section">
+            <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: info@example.com</p>
-                <p>Phone: (123) 456-7890</p>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> hello@wamambo.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> New York, NY 10012</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 WaMambo. All rights reserved.</p>
+            <p>&copy; 2024 WaMambo. All rights reserved.</p>
         </div>
     </footer>
 
@@ -162,7 +280,34 @@
             duration: 1000,
             once: true
         });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Newsletter form submission
+        const newsletterForm = document.querySelector('.newsletter-form');
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = e.target.querySelector('input[type="email"]').value;
+            // Here you would typically handle the newsletter subscription
+            alert('Thank you for subscribing to our newsletter!');
+            e.target.reset();
+        });
+
+        // Search form submission
+        const searchForm = document.querySelector('.search-form');
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const query = e.target.querySelector('.search-input').value;
+            // Here you would typically handle the search functionality
+            console.log('Searching for:', query);
+        });
     </script>
-    <script src="script.js"></script>
 </body>
 </html>
